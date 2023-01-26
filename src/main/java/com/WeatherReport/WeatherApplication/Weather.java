@@ -13,6 +13,10 @@ public class Weather {
 	private int visibility;
 	private double wind_speed,wind_deg;
 	private double clouds;
+	private double rain_1h=0.0;
+	private double snow_1h=0.0;
+	private double uvi,dewpoint;
+	private String timezone;
 
 	@Override
 	public String toString() {
