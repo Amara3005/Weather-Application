@@ -4,10 +4,7 @@ import org.json.JSONArray;
 import org.json.JSONObject;
 import org.springframework.stereotype.Component;
 import org.springframework.web.client.RestTemplate;
-/*
-import com.practise.whtr.JSONArray;
-import com.practise.whtr.JSONObject;
-import com.practise.whtr.Weather;    */
+
 
 @Component
 public class ExternalApiCall {
