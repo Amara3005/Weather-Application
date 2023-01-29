@@ -1,11 +1,15 @@
 package com.WeatherReport.WeatherApplication;
 
+import org.json.JSONArray;
+import org.json.JSONObject;
+import org.springframework.stereotype.Component;
 import org.springframework.web.client.RestTemplate;
-
+/*
 import com.practise.whtr.JSONArray;
 import com.practise.whtr.JSONObject;
-import com.practise.whtr.Weather;
+import com.practise.whtr.Weather;    */
 
+@Component
 public class ExternalApiCall {
 
 	private String city;
@@ -15,7 +19,7 @@ public class ExternalApiCall {
 		
 		String str=null;
 		Weather whthr=new Weather();
-		int appid=5689;                            // enter valid appid num provided by weather api;
+		String appid="29215139bf2fb68daf1c9575d368a42a";                            // enter valid appid num provided by weather api;
 		try {
 		String uri=	"https://api.openweathermap.org/data/2.5/weather?q="+city+"&appid="+appid;
 		RestTemplate rst=new RestTemplate();
