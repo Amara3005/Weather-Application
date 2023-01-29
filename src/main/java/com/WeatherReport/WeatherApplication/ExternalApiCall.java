@@ -8,7 +8,6 @@ import com.practise.whtr.Weather;
 
 public class ExternalApiCall {
 
-
 	private String city;
 	private double lat,lon;
 	
@@ -91,4 +90,5 @@ public class ExternalApiCall {
 		
 		return whtr;
 	}
+
 }
