@@ -16,7 +16,7 @@ public class ExternalApiCall {
 		
 		String str=null;
 		Weather whthr=new Weather();
-		String appid="29215139bf2fb68daf1c9575d368a42a";                            // enter valid appid num provided by weather api;
+		String appid="";         //"29215139bf2fb68daf1c9575d368a42a"; enter valid appid num provided by weather api;
 		try {
 		String uri=	"https://api.openweathermap.org/data/2.5/weather?q="+city+"&appid="+appid;
 		RestTemplate rst=new RestTemplate();
